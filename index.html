@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#8f123f">
+<title>Para mi amor ❤️</title>
+<style>
+:root{--wine:#7e123b;--rose:#e94f83;--blush:#ffe5ed;--gold:#e7bd79;--cream:#fff8f5;--ink:#45152b}
+*{box-sizing:border-box}
+body{margin:0;color:var(--ink);font-family:Georgia,'Times New Roman',serif;background:radial-gradient(circle at top,#fff 0,#fff4f6 42%,#f9dbe5 100%);min-height:100vh}
+main{max-width:980px;margin:auto;padding:18px}
+.hero{text-align:center;padding:28px 14px 20px;position:relative;overflow:hidden;border-radius:26px;background:linear-gradient(135deg,#7e123b,#b72b5e 58%,#e94f83);color:white;box-shadow:0 15px 38px #7e123b2b}
+.eyebrow{letter-spacing:4px;text-transform:uppercase;font:600 .76rem system-ui,sans-serif;color:#ffe0bb}
+h1{font-size:clamp(2.5rem,9vw,5.4rem);line-height:1.02;margin:16px 0 12px;text-shadow:0 3px 0 #60102e}
+h1 span{color:#ffd7a0}
+.hero p{font-size:1.15rem;line-height:1.6;max-width:670px;margin:12px auto}
+.decor{font-size:clamp(1.7rem,5vw,3.2rem);letter-spacing:8px}
+.panel{background:#ffffffd9;border:1px solid #f2c7d5;border-radius:22px;padding:18px;margin:18px 0;box-shadow:0 8px 24px #7e123b10}
+h2{color:var(--wine);margin:0 0 12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+label{display:block;font:700 .95rem system-ui,sans-serif;margin:12px 0 6px}
+input[type=text],textarea{width:100%;border:1px solid #e5b8c8;border-radius:12px;padding:12px;font:1rem system-ui,sans-serif;background:#fffdfd;color:var(--ink)}
+textarea{min-height:100px;resize:vertical}
+input[type=file]{width:100%;font: .9rem system-ui,sans-serif;background:#fff;border:1px dashed #d78aa5;border-radius:12px;padding:10px}
+.media{min-height:150px;border:2px dashed #e6b2c6;background:#fff4f7;border-radius:16px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;overflow:hidden;padding:10px;gap:8px}
+.media img,.media video{max-width:100%;max-height:390px;border-radius:12px;object-fit:contain}
+.media audio{width:100%}
+.placeholder{text-align:center;color:#9a5771;padding:20px;line-height:1.6}
+button{border:0;border-radius:999px;padding:12px 18px;background:var(--wine);color:white;font:700 .95rem system-ui,sans-serif;cursor:pointer}
+button.alt{background:#ffe2eb;color:var(--wine);border:1px solid #f0b9cd}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+.quote{text-align:center;font-size:1.25rem;line-height:1.7;font-style:italic}
+.heart{color:var(--rose)}
+footer{text-align:center;padding:22px;color:var(--wine);font-size:1.1rem}
+.small{font: .85rem system-ui,sans-serif;color:#87536a;line-height:1.5}
+[contenteditable="true"]{outline-color:#ffd7a0}
+ .cover{position:fixed;inset:0;z-index:1000;display:flex;align-items:center;justify-content:center;padding:20px;background:radial-gradient(circle at top,#9f2455,#4a0d2a 78%);color:#fff;text-align:center;transition:opacity .7s ease,visibility .7s ease}
+.cover.hidden{opacity:0;visibility:hidden;pointer-events:none}
+.cover-card{width:min(100%,520px);padding:28px 22px;border:1px solid #ffd7a0;border-radius:28px;background:linear-gradient(145deg,#7e123b,#a71f53);box-shadow:0 20px 70px #21051680}
+.gift{font-size:clamp(5rem,22vw,8rem);line-height:1.2;filter:drop-shadow(0 8px 10px #38051d70);animation:bob 2s ease-in-out infinite}
+.cover h2{color:#ffe0bd;font-size:clamp(1.8rem,7vw,2.7rem);margin:10px 0}
+.cover p{font-size:1.08rem;line-height:1.6}
+.cover button{background:#ffe0bd;color:#78143c;padding:14px 22px;font-size:1rem}
+@keyframes bob{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-10px) rotate(2deg)}}
+#openSurprise{scroll-margin-top:20px}
+@media(max-width:560px){main{padding:10px}.hero{padding:25px 12px}.panel{padding:14px}}
+@media print{body{background:white}.actions,input[type=file],label{display:none}.panel,.hero{box-shadow:none;break-inside:avoid}}
+</style>
+</head>
+<body>
+<main>
+<div id="openSurprise" aria-hidden="true"></div>
+<header class="hero">
+  <div class="decor" aria-hidden="true">🌹 💕 🌹</div>
+  <div class="eyebrow">Para la dueña de mi corazón</div>
+  <h1 contenteditable="true" spellcheck="false">Feliz cumpleaños,<br><span>mi amor</span> ❤️</h1>
+  <p id="intro" contenteditable="true" spellcheck="false">Mica, hoy es un día tan hermoso como tú. Gracias por llenar mi vida de amor, sonrisas y momentos que quiero guardar para siempre. ❤️</p>
+  <div class="decor" aria-hidden="true">♡ ✨ ♡</div>
+</header>
+
+<section class="panel">
+  <h2>💌 Una dedicatoria para ti</h2>
+  <div class="grid">
+    <div>
+      <label for="herName">Su nombre o apodo cariñoso</label>
+      <input id="herName" type="text" value="Mica" placeholder="Ej.: Mi princesa">
+    </div>
+    <div>
+      <label for="yourName">De parte de</label>
+      <input id="yourName" type="text" placeholder="Tu nombre">
+    </div>
+  </div>
+  <label for="letter">Tu mensaje de amor</label>
+  <textarea id="letter" placeholder="Escribe aquí lo que tu corazón quiere decirle...">Feliz cumpleaños, mi Mica hermosa. ❤️🌹 Hoy celebro el regalo más bonito que la vida me ha permitido conocer: tú. Desde que llegaste, mis días tienen más luz, mis sonrisas tienen más motivos y mi corazón encontró un lugar donde quiere quedarse. Deseo que la vida te devuelva multiplicado todo el amor y la ternura que llevas dentro. Quiero acompañarte en tus sueños, abrazarte cuando el mundo pese y seguir creando contigo recuerdos que nos hagan sonreír con los años. No existe un regalo que pueda expresar lo mucho que significas para mí, pero espero que estas palabras te recuerden que eres única, preciosa y profundamente amada. Feliz cumpleaños, mi princesa. Hoy y siempre, mi corazón te elige a ti. Te amo, Mica. 💖✨</textarea>
+  <div class="actions">
+    <button id="update">Mostrar mi dedicatoria</button>
+    <button class="alt" id="reset">Restablecer mensaje</button>
+  </div>
+  <p class="quote" id="letterDisplay">“Feliz cumpleaños, mi Mica hermosa. ❤️🌹 Hoy celebro el regalo más bonito que la vida me ha permitido conocer: tú. Desde que llegaste, mis días tienen más luz, mis sonrisas tienen más motivos y mi corazón encontró un lugar donde quiere quedarse. Deseo que la vida te devuelva multiplicado todo el amor y la ternura que llevas dentro. Quiero acompañarte en tus sueños, abrazarte cuando el mundo pese y seguir creando contigo recuerdos que nos hagan sonreír con los años. No existe un regalo que pueda expresar lo mucho que significas para mí, pero espero que estas palabras te recuerden que eres única, preciosa y profundamente amada. Feliz cumpleaños, mi princesa. Hoy y siempre, mi corazón te elige a ti. Te amo, Mica. 💖✨”</p>
+  <p id="signature" style="text-align:center;font-weight:bold">Con todo mi amor, siempre. 💋</p>
+</section>
+
+<section class="grid">
+  <div class="panel">
+    <h2>📸 Nuestros recuerdos</h2>
+    <label for="photos">Añadir fotos desde tu celular</label>
+    <input id="photos" type="file" accept="image/*" multiple>
+    <div class="media" id="photoArea"><div class="placeholder">Coloca aquí las fotos de sus momentos más bonitos. 🌷</div></div>
+  </div>
+  <div class="panel">
+    <h2>🎞️ Un video para ti</h2>
+    <label for="videoFile">Añadir video o saludo</label>
+    <input id="videoFile" type="file" accept="video/*">
+    <div class="media" id="videoArea"><div class="placeholder">Un video lleno de recuerdos, sonrisas y amor. 💞</div></div>
+  </div>
+</section>
+
+<section class="panel">
+  <h2>🎶 Nuestra canción</h2>
+  <p>Elige una canción especial para acompañar esta sorpresa.</p>
+  <label for="audioFile">Añadir música desde tu dispositivo</label>
+  <input id="audioFile" type="file" accept="audio/*">
+  <div class="media" id="audioArea"><div class="placeholder">Tu canción favorita sonará cuando pulses reproducir. 🎵</div></div>
+</section>
+
+<section class="panel">
+  <div class="decor" style="text-align:center">🌹 💗 🌹</div>
+  <h2 contenteditable="true" spellcheck="false" style="text-align:center">Un deseo para ti</h2>
+  <p class="quote" contenteditable="true" spellcheck="false">Que la vida te regale tanta felicidad como la que tú le das a mi corazón. Que hoy te sientas querida, admirada y abrazada. Y que yo pueda seguir celebrando muchos cumpleaños a tu lado. 💖</p>
+  <div style="text-align:center;font-size:2rem">💝 🥂 🎂</div>
+  <div class="actions" style="justify-content:center">
+    <button id="heartRain">Lluvia de corazones 💕</button>\n    <button id="saveText">Guardar dedicatoria como texto</button>
+    <button class="alt" onclick="window.print()">Imprimir / guardar como PDF</button>
+  </div>
+</section>
+<footer>Hecho con amor, especialmente para ti. <span class="heart">♥</span></footer>
+</main>
+<script>
+const defaultLetter='Feliz cumpleaños, mi Mica hermosa. ❤️🌹 Hoy celebro el regalo más bonito que la vida me ha permitido conocer: tú. Desde que llegaste, mis días tienen más luz, mis sonrisas tienen más motivos y mi corazón encontró un lugar donde quiere quedarse. Deseo que la vida te devuelva multiplicado todo el amor y la ternura que llevas dentro. Quiero acompañarte en tus sueños, abrazarte cuando el mundo pese y seguir creando contigo recuerdos que nos hagan sonreír con los años. No existe un regalo que pueda expresar lo mucho que significas para mí, pero espero que estas palabras te recuerden que eres única, preciosa y profundamente amada. Feliz cumpleaños, mi princesa. Hoy y siempre, mi corazón te elige a ti. Te amo, Mica. 💖✨';
+document.getElementById('update').addEventListener('click',()=>{
+ const name=document.getElementById('herName').value.trim();
+ const from=document.getElementById('yourName').value.trim();
+ const msg=document.getElementById('letter').value.trim();
+ document.getElementById('letterDisplay').textContent='“'+(msg||defaultLetter)+'”';
+ document.getElementById('signature').textContent='Con todo mi amor'+(from?' de '+from:'')+', siempre. 💋';
+ const intro=document.getElementById('intro');
+ if(name) intro.textContent='Hoy celebramos tu vida, '+name+', una persona tan hermosa por dentro y por fuera. Gracias por llenar mi mundo de amor y alegría. ❤️';
+});
+document.getElementById('reset').addEventListener('click',()=>{
+ document.getElementById('herName').value='';
+ document.getElementById('yourName').value='';
+ document.getElementById('letter').value=defaultLetter;
+ document.getElementById('letterDisplay').textContent='“'+defaultLetter+'”';
+ document.getElementById('signature').textContent='Con todo mi amor, siempre. 💋';
+ document.getElementById('intro').textContent='Mica, hoy es un día tan hermoso como tú. Gracias por llenar mi vida de amor, sonrisas y momentos que quiero guardar para siempre. ❤️';
+});
+function addFiles(inputId,areaId,kind){
+ document.getElementById(inputId).addEventListener('change',e=>{
+  const area=document.getElementById(areaId);area.innerHTML='';
+  const files=Array.from(e.target.files||[]);
+  if(!files.length){area.innerHTML='<div class="placeholder">No se seleccionó ningún archivo.</div>';return;}
+  files.forEach(file=>{
+   const url=URL.createObjectURL(file);let el;
+   if(kind==='image'){el=document.createElement('img');el.src=url;el.alt=file.name;}
+   else if(kind==='video'){el=document.createElement('video');el.src=url;el.controls=true;el.playsInline=true;}
+   else{el=document.createElement('audio');el.src=url;el.controls=true;}
+   area.appendChild(el);
+  });
+ });
+}
+addFiles('photos','photoArea','image');
+addFiles('videoFile','videoArea','video');
+addFiles('audioFile','audioArea','audio');
+document.getElementById('heartRain').addEventListener('click',()=>{
+ for(let i=0;i<28;i++){
+  const h=document.createElement('span');
+  h.textContent=['❤️','💕','💖','🌹'][Math.floor(Math.random()*4)];
+  h.style.position='fixed';h.style.left=(Math.random()*94)+'vw';h.style.top='-40px';
+  h.style.zIndex='900';h.style.pointerEvents='none';h.style.fontSize=(18+Math.random()*22)+'px';
+  h.style.transition='transform 3.2s linear, opacity 3.2s linear';
+  document.body.appendChild(h);
+  requestAnimationFrame(()=>{h.style.transform='translateY(110vh) rotate(360deg)';h.style.opacity='0';});
+  setTimeout(()=>h.remove(),3400);
+ }
+});
+document.getElementById('saveText').addEventListener('click',()=>{
+ const text='Dedicatoria de cumpleaños\n\n'+document.getElementById('letterDisplay').innerText+'\n\n'+document.getElementById('signature').innerText;
+ const url=URL.createObjectURL(new Blob([text],{type:'text/plain;charset=utf-8'}));
+ const a=document.createElement('a');a.href=url;a.download='dedicatoria-para-mi-amor.txt';a.click();URL.revokeObjectURL(url);
+});
+</script>
+</body>
+</html>
