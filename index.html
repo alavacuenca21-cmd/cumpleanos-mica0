@@ -170,5 +170,28 @@ document.getElementById('saveText').addEventListener('click',()=>{
  const a=document.createElement('a');a.href=url;a.download='dedicatoria-para-mi-amor.txt';a.click();URL.revokeObjectURL(url);
 });
 </script>
+ 
+<section style="max-width:700px;margin:30px auto;padding:20px;text-align:center;color:#fff;background:#35152f;border-radius:20px;">
+  <h2>❤️ Nuestros recuerdos ❤️</h2>
+
+  <h3>📸 Nuestra foto</h3>
+  <img src="IMG_20251228_155512_418.jpg"
+       alt="Nuestro recuerdo"
+       style="width:100%;max-width:450px;border-radius:15px;">
+
+  <h3>🎬 Nuestro video</h3>
+  <video controls playsinline preload="metadata"
+         style="width:100%;max-width:550px;border-radius:15px;">
+    <source src="InShot_20261017_151738951.mp4" type="video/mp4">
+    Tu navegador no puede reproducir este video.
+  </video>
+
+  <h3>🎵 Nuestra canción</h3>
+  <audio controls preload="metadata" style="width:100%;">
+    <source src="Melendi - Tu Jardín Con Enanitos (Letra)(MP3_320K).mp3" type="audio/mpeg">
+    Tu navegador no puede reproducir esta canción.
+  </audio>
+</section>
+
 </body>
 </html>
